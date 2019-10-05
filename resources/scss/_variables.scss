@@ -1,0 +1,83 @@
+
+/* ~ This file controls the universe ~ */
+
+$pageBackgroundWriting: url('../images/quillbackground.png') top center no-repeat fixed #f0e6cd;
+$pageBackgroundReading: url('../images/glassesbackground.png') top center no-repeat fixed #f0e6cd;
+$pageBackgroundPrivate: url('../images/privatebackground.png') center no-repeat fixed #f0e6cd;
+$pageBackgroundPony: url('../images/pony.png') center no-repeat fixed #f0e6cd;
+
+/* == || General || ========================================================================================================= */
+$standardBorderRadius: 4px;
+
+/* == || Site Header/Navigation || ========================================================================================== */
+$headerBackground: #4f3b2a;
+$headerBottomBorder: none;
+$logoBackground: #5E4A38;
+$logoColor: #FFFFFF;
+$navLinkColor: #FFFFFF;
+$navLinkBackgroundHover: #332411;
+
+/* == || Text || ============================================================================================================ */
+$mainFont: 'Lato', sans-serif;			/* The default font for everything that isn't the other font */
+$displayFont: 'Lato', sans-serif;		/* Something fancy and cool, to contrast the main font's normalness */
+$headingColor: #4f3b2a;
+$paragraphColor: #4F3B2A;           /* Also Applied to BODY */
+$linkColor: #EA6F2A;
+$emphasizedBlockBackground: rgba(70,126,19,0.05);
+$PLineHeight: 25px;
+
+/* == || Forms || =========================================================================================================== */
+$textInputBackground: rgba(240,230,205,0.5);
+$textInputBackgroundFocus: rgba(240,230,205,0.9);
+$textInputBoxShadowFocus: 1px 1px 12px rgba(240,230,205,0.5) inset;
+$textInputColor: #5A4632;
+$buttonBackground: #467E13;
+$buttonBackgroundHover: #5B9B12;
+$buttonColor: #FFFFFF;
+$formElementBorderRadius: 0;
+
+/* == || Footer || ========================================================================================================== */
+$footerBackground: #4f3b2a;
+$footerLinkColor: #FFFFFF;
+
+/* == || Action Buttons || ================================================================================================== */
+$actionButtonBackground: #467e13;
+$actionButtonBackgroundHover: #5b9b12;
+
+/* == || Colour Variables || ================================================================================================ */
+$tinted-5: rgba(194, 154, 104, 0.1);     /*  These are the younger, hipper variables that are gradually replacing the                */
+$tinted-10: rgba(119, 69, 22, 0.1);     /*  "backgroundColorX" ones below. */
+$tinted-20: rgba(79, 59, 42, 0.2);
+$tinted-30: rgba(79, 59, 42, 0.3);
+$tinted-40: rgba(79, 59, 42, 0.4);
+$tinted-50: rgba(79, 59, 42, 0.5);
+
+$backgroundColor1: #f0e6cd;				/* The 4 background colour variables are used for the backgrounds of various objects, */
+$backgroundColor2: #e1cfaf;				/* they are generally 4 different shades of one colour, with 1 being the lightest,    */
+$backgroundColor3: #332411;				/* and 4 being the darkest. */
+$backgroundColor4: #E8dcc5;
+
+$mediumColor: #4f3b2a;					/* A colour with moderate contrast to the background colours. Used for most text. */
+$strongColor: #fffcf6;					/* A colour similar to the above, but with higher contrast. */
+$accentColor: #c2580b;					/* A colour that "pops" against the rest, especailly the backround shades. */
+
+$infoColor: #14191e;
+$dangerColor: #B02409;
+$successColor: #5AA322; /* 147A1B */
+
+$overlayLight: rgba(255,250,245,0.25);	/* A partially transparent colour, for things overlayed on dark things */
+$overlayDark: rgba(20,25,30,0.8);		/* Another partially transparent colour, for overlays on light things */
+
+$tag-background: #E1CFAF; /* Used on the satisfactor and "In Progress" tags */
+
+/* == || Box Style Variables || ============================================================================================= */
+$borderStyle: solid 0px $mediumColor;	/* Use this to define box border colour and solidness. (Thickness is irrelevant here) */
+$borderWidth: 0;						/* Use this to define the thickness of box border, and which sides they appear on. */
+$boxShadow: none;
+
+$standard-box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+
+/* == || Navigation/Header Style Variables || =============================================================================== */
+$navButtonBorderStyle: 0;				/* Use these 2 to define borders on */
+$navButtonBorderWidth: 0;				/* nav buttons, similar to above.   */
+$headerBottomBorder: none;				/* Optinally add a border to the bottom of the header bar */
