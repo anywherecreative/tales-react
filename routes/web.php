@@ -25,15 +25,25 @@ Route::prefix('intro')->group(function() {
 
 Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('dash');
 Route::prefix('story')->group(function() {
     Route::get('/top/{period?}', 'StoryController@topRated')->name('story.top');
+    Route::get('/view/{story}', 'StoryController@view')->name('story.view');
     Route::get('/random/{rating?}', 'StoryController@random')->name('story.random');
-    Route::get('/create', 'StoryController@create')->name('story.create');
-
-
+    Route::get('/newlines/{story}', 'StoryController@newLines')->name('story.newlines');
+    Route::get('/upvote/{story}', 'StoryController@upvote')->name('story.upvote');
+    Route::get('/downvote/{story}', 'StoryController@downvote')->name('story.downvote');
+    Route::middleware('auth')->group(function () {
+        Route::get('/create', 'StoryController@create')->name('story.create');
+        Route::post('/save', 'StoryController@save')->name('story.save');
+        Route::post('/add/{story}', 'StoryController@addLine')->name('story.add');
+    });
 });
 
 Route::prefix('search')->group(function() {
     Route::get('/', 'SearchController@index')->name('search');
     Route::get('/results', 'SearchController@results')->name('search.results');
 });
+
+//define all new routes before this point as {comic} will resolve everything before additional routes
+Route::get('/{story}', 'StoryController@redirect')->name('story.shortcut');
