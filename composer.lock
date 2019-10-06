@@ -7,7 +7,7 @@
     "content-hash": "a867aeaa2c83f41657916ad59ba41033",
     "packages": [
         {
-            "name": "algolia/algoliasearch-client-php",
+            "name": "algolia/php artisan scout:import-client-php",
             "version": "2.4.0",
             "source": {
                 "type": "git",
