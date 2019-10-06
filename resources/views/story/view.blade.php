@@ -32,8 +32,7 @@
     </div>
     @if(Auth::check())
     <form action="{!! route('story.add', ['story'=>$story]) !!}" method="post" id="addline">
-        <textarea name="line">
-        </textarea>
+        <textarea name="line"></textarea>
         @csrf
         <button class="btn btn-success">Add Line</button>
     </form>
